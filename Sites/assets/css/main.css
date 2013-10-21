@@ -1,0 +1,59 @@
+#nav {
+        float:left; /* make the list appearin the outer <ul> */
+        width: 100%; /* stops the shrink wrapping of the div to cotent and extend its background color */
+}
+
+#nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 8em;
+        float: left; /* make horizontal */
+}
+
+#nav a, #nav h2{
+        font: bold 11px/16px arial, helvetica, sans-serif;
+        display: block;
+        margin: 0;
+        padding: 2px 3px;
+}
+
+#nav a {
+        color: #000;
+        text-decoration: none;
+}
+
+#nav a:hover, #t_selected a {
+        color: #a00;
+}
+
+#nav li {
+        position: relative; /* set position context */
+}
+
+#nav ul ul {
+        position: absolute; /* take sub list out of flow so doesn't push items down */
+        z-index: 500; /* make sure popouts stay on top */
+}
+
+#nav ul ul ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+}
+
+/*hide submenu  up to 3 levels */
+div#nav ul ul, div#nav ul li:hover ul ul, div#nav ul ul li:hover ul{
+        display: none;
+}
+
+/* reveal submenu, again up to 3 levels */
+div#nav ul li:hover ul, div#nav ul ul li:hover ul, div#nav ul ul ul li:hover ul{
+        display: block;
+}
+
+#content{
+        clear: both;
+        float:left;
+
+}

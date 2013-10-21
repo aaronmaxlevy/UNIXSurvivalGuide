@@ -1,5 +1,3 @@
-ANDY IS AWESOME
-
 UNIXSurvivalGuide
 =================
 
