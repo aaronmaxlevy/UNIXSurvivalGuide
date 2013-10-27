@@ -1,54 +1,85 @@
-#nav {
-        float:left; /* make the list appearin the outer <ul> */
-        width: 100%; /* stops the shrink wrapping of the div to cotent and extend its background color */
+body{
+        height: 800px;
+        background-image: url("../imgs/bg.jpg");
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        font-family: 'Ubuntu', sans-serif;
 }
 
-#nav ul {
+#main {
+        width: 976px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        background-color: orange; 
+
+}
+
+#logo {
+        float:left;
+        background-color:red;
+}
+
+header {
+        height: 150px;
+        background-color:blue;
+}
+
+
+nav {
+        float:right; /* make the list appearin the outer <ul> */
+        /*width: 100%; /* stops the shrink wrapping of the div to cotent and extend its background color */
+        background-color: yellow;
+}
+
+nav ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        width: 8em;
+        width: 12em;
         float: left; /* make horizontal */
+
 }
 
-#nav a, #nav h2{
-        font: bold 11px/16px arial, helvetica, sans-serif;
+nav a, nav h2{
+        font: bold 13px/18px;
         display: block;
         margin: 0;
         padding: 2px 3px;
 }
 
-#nav a {
+nav a {
         color: #000;
         text-decoration: none;
 }
 
-#nav a:hover, #t_selected a {
+nav a:hover, #t_selected a {
         color: #a00;
 }
 
-#nav li {
+nav li {
         position: relative; /* set position context */
 }
 
-#nav ul ul {
+nav ul ul {
         position: absolute; /* take sub list out of flow so doesn't push items down */
         z-index: 500; /* make sure popouts stay on top */
 }
 
-#nav ul ul ul {
+nav ul ul ul {
         position: absolute;
         top: 0;
         left: 100%;
 }
 
 /*hide submenu  up to 3 levels */
-div#nav ul ul, div#nav ul li:hover ul ul, div#nav ul ul li:hover ul{
+divnav ul ul, divnav ul li:hover ul ul, divnav ul ul li:hover ul{
         display: none;
 }
 
 /* reveal submenu, again up to 3 levels */
-div#nav ul li:hover ul, div#nav ul ul li:hover ul, div#nav ul ul ul li:hover ul{
+divnav ul li:hover ul, divnav ul ul li:hover ul, divnav ul ul ul li:hover ul{
         display: block;
 }
 
