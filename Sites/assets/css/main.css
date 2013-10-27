@@ -3,8 +3,9 @@ body{
         background-image: url("../imgs/bg.jpg");
         padding: 0;
         margin: 0;
-        font-size: 12px;
-        font-family: 'Ubuntu', sans-serif;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
 }
 
 #main {
@@ -12,7 +13,8 @@ body{
         height: 100%;
         margin: 0 auto;
         padding: 0;
-        background-color: orange; 
+        background-color: orange;
+        position: relative; 
 
 }
 
@@ -26,14 +28,22 @@ header {
         background-color:blue;
 }
 
+#side {
+        position: absolute;
+        background-color: green;
+        height: 250px;
+        width: 150px;
+        margin-left: -150px;
+        margin-top: 75px;
+}
 
-nav {
+#mainNav {
         float:right; /* make the list appearin the outer <ul> */
         /*width: 100%; /* stops the shrink wrapping of the div to cotent and extend its background color */
         background-color: yellow;
 }
 
-nav ul {
+#mainNav ul, #sideNav ul	 {
         margin: 0;
         padding: 0;
         list-style: none;
@@ -42,44 +52,44 @@ nav ul {
 
 }
 
-nav a, nav h2{
+#mainNav a, #mainNav h2{
         font: bold 13px/18px;
         display: block;
         margin: 0;
         padding: 2px 3px;
 }
 
-nav a {
+#mainNav a, #sideNav a {
         color: #000;
         text-decoration: none;
 }
 
-nav a:hover, #t_selected a {
+#mainNav a:hover, #t_selected a {
         color: #a00;
 }
 
-nav li {
+#mainNav li {
         position: relative; /* set position context */
 }
 
-nav ul ul {
+#mainNav ul ul {
         position: absolute; /* take sub list out of flow so doesn't push items down */
         z-index: 500; /* make sure popouts stay on top */
 }
 
-nav ul ul ul {
+#mainNav ul ul ul {
         position: absolute;
         top: 0;
         left: 100%;
 }
 
 /*hide submenu  up to 3 levels */
-divnav ul ul, divnav ul li:hover ul ul, divnav ul ul li:hover ul{
+div#mainNav ul ul, div#mainNav ul li:hover ul ul, div#mainNav ul ul li:hover ul{
         display: none;
 }
 
 /* reveal submenu, again up to 3 levels */
-divnav ul li:hover ul, divnav ul ul li:hover ul, divnav ul ul ul li:hover ul{
+div#mainNav ul li:hover ul, div#mainNav ul ul li:hover ul, div#mainNav ul ul ul li:hover ul{
         display: block;
 }
 
