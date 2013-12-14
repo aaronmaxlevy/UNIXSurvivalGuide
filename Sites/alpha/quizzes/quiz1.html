@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Team Got Nothing Unix Page</title>
+	<!-- <link rel="stylesheet" rev="stylesheet" href="assets/css/bootstrap.css" type="text/css" /> -->
+	<link rel="stylesheet" rev="stylesheet" href="../assets/css/main.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="../assets/imgs/favicontemp3.png">
+	
+	<script type="text/javascript">
+	function doSelect(which) {
+		if (which.value != 'select') {
+			alert(which.value);
+		}
+	}
+	</script>
+</head>
+<body>		
+	<header>
+		<section id="logo">
+			<img src="../assets/imgs/Team_Got_Nothing_Logo1.png" height="150" alt="logo">
+		</section>
+		<nav id="mainNav">
+			<ul>
+				<li id="home"><a href="../">Home</a></li>
+			</ul>
+			<ul>
+				<li id="tutorials"><a href="../tutorials/intro.html">Tutorials</a></li>
+			</ul>
+			<ul>
+				<li id="t_selected"><a href="#">Quizzes</a></li>
+			</ul>
+			<ul>
+				<li id="about"><a href="#">About</a></li>
+			</ul>
+			<ul>
+				<li id="feedback"><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="main">
+
+		<div id="content">
+		    <form name="tutorial1" id="t1" method="get" action="#"
+            onsubmit="return validate();">
+        <h1>Tutorial 1: Working with directories</h1>
+		<p>Instructions: Please select the best choice from the given choices to each question. Don't worry if you get it wrong, you can always try again.</p>
+        1. How do you make a directory called myanimals?
+        <select onchange="doSelect(this);">
+        	<option value="select">--Select--</option>
+        	<option value="This is wrong! Try again">..myanimals</option>
+        	<option value="This is wrong! Try again">./myanimals</option>
+        	<option value="This is the right answer! Good job">mkdir myanimals</option>
+        </select>
+        <br /><br/>
+        2. How do you list the content of the directories?
+        <select onchange="doSelect(this);">
+        	<option value="select">--Select--</option>
+        	<option value="This is wrong! Try again">..myanimals</option>
+        	<option value="This is the right answer! Good job">Is</option>
+        	<option value="This is wrong! Try again">pwd</option>
+        </select>
+        <br /><br/>
+        3. How do you change directories to myanimals?
+        <select onchange="doSelect(this);">
+        	<option value="select">--select--</option>
+        	<option value="This is wrong! Try again">..myanimals</option>
+        	<option value="This is wrong! Try again">./myanimals</option>
+        	<option value="This is the right answer! Good job">cd myanimals</option>
+        </select>
+        <br /><br/>
+        4. Go to current directory myanimals?
+        <select onchange="doSelect(this);">
+        	<option value="select">--select--</option>
+        	<option value="This is wrong! Try again">..myanimals</option>
+        	<option value="This is wrong! Try again">pwd</option>
+        	<option value="This is the right answer! Good job">.myanimals</option>
+        </select>
+        <br /><br/>
+        5. How do you go to parent directory called myanimals?
+        <select onchange="doSelect(this);">
+        	<option value="select">--select--</option>
+        	<option value="This is the right answer! Good job">..myanimals</option>
+        	<option value="This is wrong! Try again">.myanimals</option>
+        	<option value="This is wrong! Try again">mkdir myanimals</option>
+        </select>
+        <br /><br/>
+        6. How do you go to home directory called myanimals?
+       <select onchange="doSelect(this);">
+        	<option value="select">--select--</option>
+        	<option value="This is wrong! Try again">..myanimals</option>
+        	<option value="This is wrong! Try again">./myanimals</option>
+        	<option value="This is the right answer! Good job">~myanimals</option>
+        </select>
+    	</form>
+    	<br/>
+	</div>
+
+	</div>
+		<footer>
+			<p style="text-align:center;">&#169; 2013 Team GotNothing<br>Rochester Institute of Technology<br>All Rights Reserved. Do not copy or redistribute in any form.</p>
+			<br>
+		</footer>
+</body>
+</html>

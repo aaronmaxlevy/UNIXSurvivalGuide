@@ -1,0 +1,182 @@
+/* green -  8dc63f */
+/* orange -  ff9b45 */
+
+body{
+        /*height: 800px;*/
+        background-image: url("../imgs/bg.jpg");
+        padding: 0;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+		min-width: 1300px;
+        color: white;
+        clear: both;
+}
+
+p{
+font-size: 16px;
+
+}
+
+#main {
+        width: 976px;
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0;
+        background: rgb(0, 0, 0); /* Fall-back for browsers that don't
+                                    support rgba */
+        background: rgba(0, 0, 0, .5);
+        border-radius:15px;
+        position: relative;
+
+}
+
+#logo {
+        float:left;
+	height: 150px;	
+}
+
+header {
+	margin: auto;
+	width: 976px;
+        height: 150px;
+}
+
+footer {
+	margin: auto;
+	font-size: 9px;
+	font-weight: 300px;
+}
+
+#side {
+        position: absolute;
+        background: rgb(0, 0, 0); /* Fall-back for browsers that don't
+                                    support rgba */
+        background: rgba(0, 0, 0, .5);
+        border-radius: 0 15px 15px 0;
+        margin-left: 0px;
+        margin-top: 25px;
+}
+
+#mainNav {
+        float:right; /* make the list appearin the outer <ul> */
+        /*width: 100%; /* stops the shrink wrapping of the div to cotent and extend its background color */
+        /*width: 600px;*/
+        margin-top: 100px;
+}
+
+#mainNav ul{
+        margin: 0;
+        list-style: none;
+        padding-right: 5px;
+        float: left; /* make horizontal */
+
+}
+
+#mainNav a {
+        font: bold 13px/18px;
+        display: block;
+        margin: 0;
+        padding: 2px 3px;
+}
+
+#mainNav a{
+        color: #000;
+        text-decoration: none;
+        color: #ff9b45;
+        font-weight: 300;
+        font-size: 16px;
+}
+
+#mainNav a:hover, #t_selected a {
+        color: #8dc63f;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+}
+
+
+
+#mainNav li {
+        position: relative; /* set position context */
+}
+
+#sideNav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        float:right; /* make the list appearin the outer <ul> */
+}
+
+#sideNav ul{
+        margin: 0;
+        list-style: none;
+        padding-right: 5px;
+        padding-left: 10px;
+        padding-bottom:5px;
+
+}
+
+#sideNav a {
+        font: bold 11px/16px;
+        display: block;
+        margin: 0;
+        padding: 2px 3px;
+}
+
+#sideNav a, #sideNav a {
+        color: #000;
+        text-decoration: none;
+        color: #ff9b45;
+        font-weight: 300;
+        font-size: 14px;
+}
+
+#sideNav a:hover, #t_selected a {
+        color: #8dc63f;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;		
+}
+
+
+
+#sideNav li {
+        position: relative; /* set position context */
+
+}
+
+
+
+
+
+#content{
+        clear: both;
+        float:left;
+        /*width: 976px;*/
+        margin-left: 20px;
+        margin-right: 20px;
+
+}
+
+#left{
+    position: relative;
+    float:left;
+    width:460px;
+	height: 185px;
+
+}
+
+#right{
+    position: relative;
+    float:right;
+    width:460px;
+	height: 185px;
+}
+
+#full{
+    position: relative;
+    float: right;
+    width:970px;
+}

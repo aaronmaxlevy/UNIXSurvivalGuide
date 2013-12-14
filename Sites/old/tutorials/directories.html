@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Team Got Nothing Unix Page</title>
+	<!-- <link rel="stylesheet" rev="stylesheet" href="assets/css/bootstrap.css" type="text/css" /> -->
+	<link rel="stylesheet" rev="stylesheet" href="../assets/css/main.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="../assets/imgs/favicontemp3.png">
+
+
+</head>
+<body>		
+	<header>
+		<section id="logo">
+			<img src="../assets/imgs/Team_Got_Nothing_Logo1.png" height="150" alt="logo">
+		</section>
+		<nav id="mainNav">
+			<ul>
+				<li id="home"><a href="../index.html">Home</a></li>
+			</ul>
+			<ul>
+				<li id="t_selected"><a href="intro.html">Tutorials</a></li>
+			</ul>
+			<ul>
+				<li id="quizzes"><a href="../quizzes/quiz1.html">Quizzes</a></li>
+			</ul>
+			<ul>
+				<li id="about"><a href="../about.html">About</a></li>
+			</ul>
+			<ul>
+				<li id="feedback"><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+
+
+
+	</header>
+
+				<div id="side">
+					<nav id="sideNav">
+                                <ul>
+									<li id="tutorials"><a href="intro.html">Intro</a></li>
+                                </ul>
+                                <ul>
+                                        <li id="home"><a href="directories.html">Directories</a></li>
+                                </ul>
+                                <ul>
+                                        <li id="tutorials"><a href="files.html">Working with Files</a></li>
+                                </ul>
+                                <ul>
+                                        <li id="tutorials"><a href="redirection.html">Redirection</a></li>
+                                </ul>
+								<ul>
+                                        <li id="tutorials"><a href="security.html">Security</a></li>
+                                </ul>
+                                <ul>
+                                        <li id="tutorials"><a href="processes.html">Processes</a></li>
+                                </ul>
+                        </nav>
+				</div>
+
+
+	<div id="main">
+
+
+
+		<div id="content">
+			<br />
+			<div id="full">
+			<center>
+			<h1>Working with Directories</h1>
+			</center>
+
+			<div>
+				<div style="float:left;">
+					<h2>What are Directories?</h2>
+					<p>Directories are what you probably recognize as folders in Windows, OSX or Linux.</p>
+				</div>
+			</div>
+
+
+			<div>
+				<div style="float:left; width: 460px; vertical-align: middle;">
+				<h2>Structure</h2>
+				<p>The file structure is are like the roots of a tree, called a hierarchical structure. The origin of the root system is called root and is notated by a / (slash).</p>
+                <p>Sub-directories are the directories that branch off of the directory.</p>
+				
+				<h4>Example:</h4>
+				<p>Here is the full directory for Rattlesnake: /Reptiles/Snakes/Rattlesnake</p>
+				<h4>Exercise:</h4>
+				<p>Now find the directory for Mountain Lion</p>
+				</div>
+
+				<div style="float:right; width:460px; vertical-align: middle;">
+				<center><img src="../assets/imgs/diagram1.png" width="400"></center>
+				</div>
+				
+			</div>	
+			
+			<div>
+				<div style="float:left; width:460px; vertical-align: middle; clear:left;">
+				<h2>Make a Directory</h2>
+				<p><strong>mkdir</strong> is the command for <strong>m</strong>a<strong>k</strong>e<strong>dir</strong>ectory</p>
+				
+				<h4>Example:</h4>
+				<p>mkdir myanimals</p>
+				<h4>Exercise:</h4>
+				<p>Now create a new directory called unixtutorials</p>
+				</div>
+
+				<div style="float:right; width:460px; vertical-align: middle; clear:left;">
+				<br/>
+				<center><img src="../assets/imgs/windows_putty.png" width="400"></center>
+				</div>
+			</div>
+			
+			<div style="clear:left;">
+				<h2>Viewing files and directories</h2>
+				<p><strong>ls</strong> is the command for <strong>l</strong>i<strong>s</strong>t contents</p>
+				
+				<h4>Example:</h4>
+				<p>pic of ls of myanimals</p>
+				
+				<h4>Exercise:</h4>
+				<p>enter ls to see your directories. unixtutorials should be one of them.</p>
+			</div>
+
+			<div>
+				<h2>Changing Directories</h2>
+				<h3>Changing to a different directory</h3>
+				<p><strong>cd</strong> is the command for <strong>c</strong>hange <strong>d</strong>irectory</p>
+				
+				<h4>Example:</h4>
+				<p>cd myanimals</p>
+				
+				<h4>Exercise:</h4>
+				<p>Which one of there will will take you to the youranimals directory?
+					<ul>
+						<li>cd .youranimals</li>
+						<li>cd youranimals</li>
+						<li>.cd youranimals</li>
+					</ul>
+				</p>
+				
+				<h3>Current Directory </h3>
+				<p>. (Period) means the current directory. Don’t think this is useful? We’ll see (it saves typing time)</p>
+				
+				<h4>Example:</h4>
+				<p>. myanimals
+					<br>This command stays in the my animals directory.
+				</p>
+				
+				<h4>Exercise:</h4>
+				<p>Which one of these will go to current directory youranimals?
+					<ul>
+						<li>cd .youranimals</li>
+						<li>cd youranimals</li>
+						<li>.cd youranimals</li>
+					</ul>
+				</p>
+				
+				<h3>Parent Directory </h3>
+				<p>.. (2 Periods) means the parent directory</p>
+				
+				<h4>Example:</h4>
+				<p>..myanimals
+					<br>This command goes up a level to unixtutorials directory.
+				</p>
+				
+				<h4>Exercise:</h4>
+				<p>Lets go to your parent directory. You’ve been down in a animal folder for a while and want to get out. Go to youranimals!
+					<ul>
+						<li>cd .youranimals</li>
+						<li>.youranimals</li>
+						<li>..youranimals</li>
+					</ul>
+				</p>
+				
+				<h3>~ The home directory</h3>
+				<p>~ (tilda) means the home directory</p>
+				
+				<h4>Example:</h4>
+				<p>~ myanimals
+					<br>This command goes up a level to unixtutorials directory.
+				</p>
+				
+				<h4>Exercise:</h4>
+				<p>Lets get to your home directory! Go to your home directory youranimals.
+					<ul>
+						<li>cd .youranimals</li>
+						<li>~youranimals</li>
+						<li>..youranimals</li>
+					</ul>
+				</p>
+			</div>
+			<div>
+				<h2>Pathnames</h2>
+				<h3>What are Pathnames?</h3>
+				<p>Pathnames let you see where you are in a directory. This is really helpful if you get lost.</p>
+				
+				<h3>The Command</h3>
+				<p><strong>pwd</strong> is the command for <strong>p</strong>rint <strong>w</strong>orking <strong>d</strong>irectory</p>
+				
+				<h4>Example:</h4>
+				<p>nom nom
+				</p>
+				
+				<h4>Exercise:</h4>
+				<p>Let’s find out where you are! Which answer lets us do that?
+					<ul>
+						<li>cd</li>
+						<li>~nom nom</li>
+						<li>pwm</li>
+					</ul>
+				</p>
+			</div>
+			
+			<div>
+				<h2>Summary</h2>
+				<p>Just Cause we all love tables</p>
+			</div>
+
+	</div>
+		<footer>
+			<br/>
+			<center>&#169; 2013 Team GotNothing</br>Rochester Institute of Technology</br>All Rights Reserved. Do not copy or redistribute in any form.</center>
+			</br>
+		</footer>
+</body>
+</html>
