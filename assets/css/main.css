@@ -1,0 +1,176 @@
+/* green -  8dc63f */
+/* orange -  ff9b45 */
+
+body{
+    background-color: #CCCCCC;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+	min-width: 500px;
+    color: #666666;
+    clear: both;
+}
+
+h2 {
+	margin-top: 8px;
+	color: #424242;
+}
+
+h3 {
+	border-bottom: 1px solid #A1A1A1;
+	color: #4A4A4A;
+}
+
+h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	border-bottom: 1px solid #A1A1A1;
+	width: 976px;
+	color: #363636;
+}
+
+a, a:visited {
+	color: #8dc63f;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;	
+}
+
+a:hover {
+	color: #ff9b45;
+}
+
+p{
+    font-size: 16px;
+}
+
+/*Layout for contact page */
+#guestbook {
+	float: left;
+	width: 400px;
+}
+#guestbook h2 {
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+#guestbookDiv {
+	height: 700px;
+}
+#contactDiv {
+	float: left;
+}
+#entries {
+	position: absolute;
+	margin-left: 400px;
+	margin-top: -10px;
+	width: 575px;
+	height: 600px;
+	overflow-y:auto;
+	-ms-overflow-y:auto;
+}
+
+
+/* Header and footer */
+
+header {
+	margin: auto;
+	background: url("../imgs/bg.png") ;
+	background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, .5);
+    height: 175px;
+    box-shadow: 0px 5px 5px black;
+}
+
+footer {
+    color: #363636;
+	margin: auto;
+	font-size: 80%;
+	font-weight: 300;
+	border-top: 1px solid grey;
+	margin-top: 20px;
+	text-align: center;
+	bottom: 0;
+	clear: both;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*Content positioning and layout*/
+
+#main {
+    width: 976px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 175px;
+}
+#content{
+    clear: both;
+	overflow: hidden;
+    width: 976px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.leftside {
+	float: left;
+	width: 200px;
+	padding-left: 50px;
+}
+.rightside {
+	float: right;
+	width: 600px;
+	padding-right: 80px;
+	margin-left: 20px;
+}
+.contentblock {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.contentblock img{
+	width: 400px;
+	padding-right: 200px;
+}
+.example {
+	border: 1px solid #363636;
+	font-family: 'Courier New', serif;
+	background-color: #B0B0B0;
+	width: 400px;
+	padding: 5px 0 5px 30px;
+	color: black;
+	margin-right: 200px;
+}
+
+/*Quiz right and wrong answer*/
+#w1, #w2, #w3, #w4, #w5, #w6, #w7, #w8, #w9, #w10{
+    display:none; color:#ff9b45;
+}
+#r1, #r2, #r3, #r4, #r5, #r6, #r7, #r8, #r9, #r10{
+    display:none; color:#8dc63f;
+}
+
+/* summary tables */
+.sum, .sum th {
+	border-collapse: collapse;
+	border: 1px solid black;
+	border-spacing: 0;
+	margin: 0;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 30px;
+	text-align: left;
+	margin-right: 85px;
+}
+.cells, .sum th {
+	border: 0;
+}
+.color {
+	background-color: #525252;
+	color: #ff9b45;
+}

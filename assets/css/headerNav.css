@@ -1,0 +1,164 @@
+/*The main header area for logo and nav*/
+#primary {
+	top: 0;
+	padding: 0;
+	margin: 0 auto;
+	background: url("../imgs/bg.png");
+    height: 150px;
+	width: 100%;
+    box-shadow: 0 0 10px black;
+	position: fixed;
+	z-index: 3;
+}
+
+#wrapper {
+    width: 980px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    float:left;
+	margin-top: 15px;
+	height: 125px;
+	width: 250px;
+}
+
+/*Rollover effect for logo*/
+.rollover {
+	background-image: url('http://nova.it.rit.edu/~teamgotnothing/assets/imgs/Team_Got_Nothing_Logo1.png');
+	background-size: 250px 125px;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 125px;
+	display: block;
+
+}
+
+.rollover:hover {
+	background-image: url('http://nova.it.rit.edu/~teamgotnothing/assets/imgs/Team_Got_Nothing_Logo1_hover.png');
+	background-size: 250px 125px;
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 250px;
+}
+
+/*The second navigation area that hides behind the primary */
+#secondary {
+    font-size: 13px;
+	position: fixed;
+	width: 680px;
+	top: 0;
+	right: 30px;
+	padding-right: 40px;
+	box-shadow: 0 0 10px black;
+	z-index: 1;
+	background-color: #242424;
+	margin-top: 100px;
+	border-radius: 5px;
+	animation: height 0.75s;
+    -moz-animation: height 0.75s; /* Firefox */
+    -webkit-animation: height 0.75s; /* Safari and Chrome */
+    -o-animation: height 0.75s; /* Opera */	
+	/*The following will make the change permanent */
+	animation-fill-mode: forwards;	
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+} /* The following makes it so that the height will not revert back to original value
+ after load */
+@keyframes height {
+    from {
+        height:40px;
+    }
+    to {
+        height: 40px;
+		padding-top: 40px;
+    }
+}
+@-moz-keyframes height { /* Firefox */
+    from {
+        height:40px;
+    }
+    to {
+        height: 40px;
+		padding-top: 40px;
+    }
+}
+@-webkit-keyframes height { /* Safari and Chrome */
+    from {
+        height:40px;
+    }
+    to {
+        height: 40px;
+		padding-top: 40px;
+    }
+}
+@-o-keyframes height { /* Opera */
+    from {
+        height:40px;
+    }
+    to {
+        height: 40px;
+		padding-top: 40px;
+    }
+}
+/*Sub navigation style*/
+#subnav  ul {
+	list-style: none;
+	text-align: center;
+}
+
+#subnav a {
+	text-decoration: none;
+	color: #ff9b45;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;	
+}
+
+#subnav a:hover {
+	color: #8dc63f
+}
+
+#subnav li {
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Main navigation style */
+#mainNav {
+	float:right; /* make the list appear in the outer <ul> */
+	margin-top: 100px;
+}
+
+#mainNav ul{
+	list-style: none;
+	padding-right: 5px;
+	float: left; /* make horizontal */
+}
+
+#mainNav a{
+	text-decoration: none;
+	color: #ff9b45;
+	font-weight: 300;
+	font-size: 16px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#mainNav a:hover {
+	color: #8dc63f;
+}
+
+#mainNav ul>.active a, #subnav ul>.active a {
+    color: #8dc63f;
+}
+
+
+
